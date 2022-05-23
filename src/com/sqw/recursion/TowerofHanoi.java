@@ -39,7 +39,7 @@ public class TowerofHanoi {
 
     public static void main(String[] args) {
         TowerofHanoi hannuota = new TowerofHanoi();
-//        hannuota.hanoi(4,"a","b","c");
+        hannuota.hanoi(4,"a","b","c");
         hannuota.hanoi(8,"a","b","c");
     }
 }
