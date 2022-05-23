@@ -84,6 +84,24 @@ public class ReverseListSolution {
         return newHead;
     }
 
+    /**
+     * 递归，简洁明了，但是一定要对函数有正确理解
+     */
+    public ListNode solutionOfReverse(ListNode head) {
+        //终止条件，空链表或者只有一个节点的链表
+        if(head == null || head.next == null) {
+            return head;
+        }
+        //相当于去除头节点，将子链表反转
+        ListNode newListNode = solutionOfReverse(head.next);
+        //子链表反转后，处理头结点
+        //head.next指向的是子链表反转后的为尾结点，子链表的尾结点的next再指向head，此时head变成尾结点
+        head.next.next = head;
+        //head变成尾结点后，head.next需要变为null
+        head.next = null;
+        return newListNode;
+    }
+
     public static void main(String[] args) {
         System.out.printf("LLLLLLLL");
     }
