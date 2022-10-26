@@ -2,11 +2,11 @@ package com.sqw.linked_list;
 
 /**
  * @Program: algorithm_exercise
- * @Description: 链表内指定区间反转
+ * @Description: BM2 链表内指定区间反转
  * @Author: sqw
  * @Create: 2022-05-24
  */
-public class reverseBetweenSolution {
+public class Solution2 {
 
     public class ListNode {
         int val;
