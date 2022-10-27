@@ -16,7 +16,9 @@ public class Solution4 {
         int val;
         ListNode next = null;
 
-        public ListNode(int i) {
+        ListNode(int x) {
+            val = x;
+            next = null;
         }
     }
 
